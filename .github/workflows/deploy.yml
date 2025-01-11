@@ -44,7 +44,7 @@ jobs:
           touch .nojekyll 
           git init
           git config --global init.defaultBranch main
-          git config user.name "GitHub Actions"
+          git config user.name "GitHub Actions" 
           git config user.email "actions@github.com"
           git add .
           git commit -m "$COMMIT_MESSAGE"
