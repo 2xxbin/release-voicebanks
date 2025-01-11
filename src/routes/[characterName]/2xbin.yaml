@@ -1,0 +1,142 @@
+korName: 빈빈
+engName: 2xbin
+hashTag: ['부드러운', '주술사', 'UTAU']
+gender: 남성
+age: 21
+height: 185
+weight: 65
+like: ['달고 씁쓸한거', '친구']
+unLike: ['조용함', '불안정한 미래']
+portrait: '/images/character/portait/2xbin/ds1.png'
+description:
+  - '부드러운 허스키 귀와 꼬리를 가진 운명을 수놓는 허스키, 빈빈입니다.'
+  - '조금 까칠해 보이지만, 다정하고 부드러운 성격을 보여줍니다.'
+  - '무뚝뚝한 허스키와 친구가 되어 노래를 불러주세요.'
+voiceBanks:
+  AI:
+    - name: 'DiffSinger 1.0'
+      illust: '/images/character/portait/2xbin/ds1.png'
+      demoYoutubes: ['oJ_L3yOjBzA']
+      downloadLink: 'https://drive.google.com/file/d/18neuqldJKDnP-1uyYNQGAjmMBMr_9w3S/view'
+      explaination:
+        - '디프싱어 음원과 일러스트가 함께 들어가 있습니다.'
+        - '"cl"음소로 촉음을, "exh" / "R" / "-" 음소로 어미숨을 사용할 수 있습니다.'
+        - '한국어 데이터 40분 + "Alex Floarea-AI-SVS" 데이터로 제작되었습니다.'
+        - '사용 가능 파라미터 : velocity (curve), tension (curve), voicing (curve)'
+        - '사용 가능 언어 : 한국어, 일본어, 영어'
+      staff:
+        - name: '빈빈'
+          position: 'Labeling & Training'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '담'
+          position: 'Illustration'
+          contact:
+            text: 'X: @Dam__00'
+            link: 'https://x.com/Dam__00'
+    - name: '미리보이스 Beta'
+      illust: '/images/character/portait/2xbin/jpcv&mvbeta.png'
+      demoYoutubes: ['1X65K0AAqYs']
+      downloadLink: 'https://drive.google.com/file/d/12vLL5ARQHabShDDX-vODFZeX1B7Uhkq8/view?usp=drive_link'
+      explaination:
+        - '미리보이스 목소리와 일러스트가 함께 들어가 있습니다.'
+        - '미리보이스의 도구 > 성우 설치로 설치할 수 있습니다.'
+        - '사용 가능 언어 : 한국어 / 사용 가능 스타일: normal'
+      staff:
+        - name: '빈빈'
+          position: 'Training'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '혜성'
+          position: 'Illustration'
+          contact:
+            text: 'X: @comet_UTAU'
+            link: 'https://x.com/comet_UTAU'
+  UTAU:
+    - name: '중국어 CVV'
+      illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
+      demoYoutubes: ['jSgT09PgPQE']
+      downloadLink: 'https://drive.google.com/file/d/1oJAL1lVjNv-LEh578F-ymfu3ZKGdb9hb/view?usp=sharing'
+      explaination:
+        - '중국어 음원과 일러스트가 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 ZH CVV인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+        - '오리지널 C3음계가 포함되어 있습니다.'
+        - '추천 리샘플러: Moresampler'
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '무늬네'
+          position: 'Illustration'
+          contact:
+            text: 'X: @surren01522'
+            link: 'https://x.com/surren01522'
+    - name: '한국어 단독음'
+      illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
+      demoYoutubes: ['aRylwywLeoU']
+      downloadLink: 'https://drive.google.com/file/d/1Chpi7iMytLO-LwUkTlG6NeLyN48DXBp6/view?usp=sharing'
+      explaination:
+        - '한국어 음원과 일러스트가 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 KO CV인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+        - '오리지널 C3음계와, 연단음식 받침(K, P, T), 단음식 받침(L, M, N, NG)이 포함되어 있습니다.'
+        - '추천 리샘플러: Moresampler'
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '무늬네'
+          position: 'Illustration'
+          contact:
+            text: 'X: @surren01522'
+            link: 'https://x.com/surren01522'
+    - name: '일본어 연속음'
+      illust: '/images/character/portait/2xbin/jpnvcv.png'
+      demoYoutubes: ['AGUMVY0NseI']
+      downloadLink: 'https://drive.google.com/file/d/17dz5phubH1ZHU8C3dIU9-Y0RRbHnOWb2/view?usp=drive_link'
+      explaination:
+        - '한국어 음원과 일러스트가 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 KO CV인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+        - '오리지널 C3음계와, 연단음식 받침(K, P, T), 단음식 받침(L, M, N, NG)이 포함되어 있습니다.'
+        - '추천 리샘플러: Moresampler'
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '김강8'
+          position: 'Illustration'
+          contact:
+            text: 'X: @goldenriver8'
+            link: 'https://x.com/goldenriver8'
+    - name: '한국어 CVC'
+      illust: '/images/character/portait/2xbin/kocvc.png'
+      demoYoutubes: ['Hr9jiPrL3Tg']
+      downloadLink: 'https://drive.google.com/file/d/13dB7VPFZOqTs1tWclm_QCjSefMEpGjCM/view?usp=sharing'
+      explaination:
+        - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 한국어 CVC인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+        - '오리지널과 파워 어펜드가 포함되어 있습니다.'
+        - '추천 리샘플러: Moresampler'
+        - '추천 플래그: Mo10, Mt-20'
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '담'
+          position: 'Illustration'
+          contact:
+            text: 'X: @Dam__00'
+            link: 'https://x.com/Dam__00'
