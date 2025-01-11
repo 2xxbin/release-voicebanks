@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IVoicebankData } from '../../types/voicebank.js';
+	import type { IVoicebankData } from '../../types/voicebank';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import { type EmblaCarouselType, type EmblaOptionsType } from 'embla-carousel';
 	import { writable, type Writable } from 'svelte/store';

@@ -4,6 +4,8 @@
 	import { onDestroy, onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 
+	import { base } from '$app/paths';
+
 	export let data;
 	const voicebanks: IVoicebankCardData[] = data.voicebanks as IVoicebankCardData[];
 	const columnCSS = writable(3);
@@ -53,7 +55,7 @@
 					class="group relative flex aspect-[4/5] items-center justify-center sm:w-[300px] md:h-[500px] md:w-[400px]"
 					tabindex="0"
 					role="button"
-					onclick={() => goto(`/${voicebank.id}`)}
+					onclick={() => goto(`/${base}/${voicebank.id}`)}
 				>
 					<img
 						src={voicebank.illust}

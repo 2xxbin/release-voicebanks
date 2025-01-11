@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { LANGS } from '../consonant';
+	import { base } from '$app/paths';
 	let { children } = $props();
 </script>
 
@@ -8,8 +8,8 @@
 	<header
 		class="flex h-20 items-center justify-between px-8 font-sans sm:mb-12 sm:flex-col sm:justify-center sm:pt-8"
 	>
-		<a class="text-center text-xl font-bold sm:mb-2 sm:text-2xl" href="/">2xxbin</a>
-		<nav
+		<a class="text-center text-xl font-bold sm:mb-2 sm:text-2xl" href="/{base}">2xxbin</a>
+		<!-- <nav
 			class="flex w-2/5 items-center justify-end font-semibold sm:w-full sm:justify-center md:font-medium"
 		>
 			{#each LANGS as lang, index}
@@ -20,7 +20,7 @@
 					<span>|</span>
 				{/if}
 			{/each}
-		</nav>
+		</nav> -->
 	</header>
 
 	<main class="flex-1 px-6">{@render children()}</main>
