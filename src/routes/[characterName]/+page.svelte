@@ -4,6 +4,8 @@
 	import { type EmblaCarouselType, type EmblaOptionsType } from 'embla-carousel';
 	import { writable, type Writable } from 'svelte/store';
 
+	import { base } from '$app/paths';
+
 	export let data;
 	const voicebankData: IVoicebankData = data.voicebankData as IVoicebankData;
 
@@ -31,7 +33,7 @@
 	<div class="flex w-full flex-col-reverse justify-center md:flex-row">
 		<img
 			class="mt-12 object-contain md:mt-0 md:w-[30%]"
-			src={voicebankData.portrait}
+			src="{base}{voicebankData.portrait}"
 			alt="{voicebankData.engName} portrait"
 		/>
 		<div class="w-full md:ml-16 md:w-1/3">
@@ -140,8 +142,9 @@
 					<div class="row-start-1 row-end-3 flex justify-end md:pr-6">
 						<img
 							class="mb-4 w-full md:mb-0 md:w-2/3"
-							src={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
-								.illust}
+							src="{base}{voicebankData.voiceBanks[$currentVoicebankCategory1][
+								$currentVoicebankCategory2
+							].illust}"
 							alt={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
 								.name}
 							loading="lazy"

@@ -55,10 +55,10 @@
 					class="group relative flex aspect-[4/5] items-center justify-center sm:w-[300px] md:h-[500px] md:w-[400px]"
 					tabindex="0"
 					role="button"
-					onclick={() => goto(`/${base}/${voicebank.id}`)}
+					onclick={() => goto(`${base}/${voicebank.id}`)}
 				>
 					<img
-						src={voicebank.illust}
+						src="{base}{voicebank.illust}"
 						alt={voicebank.name.kor}
 						class="z-1 contrast-60 duration-50 absolute inset-0 h-full w-full object-cover brightness-0 grayscale filter transition-opacity ease-in-out group-hover:opacity-0"
 					/>

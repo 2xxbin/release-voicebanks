@@ -8,7 +8,7 @@
 	<header
 		class="flex h-20 items-center justify-between px-8 font-sans sm:mb-12 sm:flex-col sm:justify-center sm:pt-8"
 	>
-		<a class="text-center text-xl font-bold sm:mb-2 sm:text-2xl" href="/{base}">2xxbin</a>
+		<a class="text-center text-xl font-bold sm:mb-2 sm:text-2xl" href={base}>2xxbin</a>
 		<!-- <nav
 			class="flex w-2/5 items-center justify-end font-semibold sm:w-full sm:justify-center md:font-medium"
 		>
