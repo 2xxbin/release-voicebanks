@@ -10,11 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 레포지토리 체크아웃
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Node.js 및 종속성 설정
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
       - name: Cache Yarn dependencies
         uses: actions/cache@v3
         with:
@@ -22,6 +25,9 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn install
 
       # 3. Vite 빌드
       - name: Build Project
