@@ -47,7 +47,7 @@
 				{/each}
 			</div>
 
-			<ul class="mb-8 mt-6 leading-8">
+			<ul class="mt-6 leading-8">
 				<li>나이 : {voicebankData.age}</li>
 				<li>키 : {voicebankData.height}cm</li>
 				<li>몸무게 : {voicebankData.weight}kg</li>
@@ -55,11 +55,15 @@
 				<li>싫어하는 것 : {voicebankData.unLike.join(', ')}</li>
 			</ul>
 
-			<div class="mt-2">
+			<div class="my-10">
 				{#each voicebankData.description as desc}
 					<p class="leading-6">{desc}</p>
 				{/each}
 			</div>
+
+			<a class="text-2xl font-bold" href={voicebankData.teamForUseLink} target="_blank"
+				>TEAM FOR USE</a
+			>
 
 			<div class="mt-12">
 				<div
@@ -119,11 +123,11 @@
 				{/each}
 			</div>
 
-			<div class="mt-4 flex w-full justify-center font-sans text-xl">
+			<div class="mt-4 flex w-full flex-wrap justify-center font-sans text-xl">
 				{#if $currentVoicebankCategory1}
 					{#each Object.keys(voicebankData.voiceBanks[$currentVoicebankCategory1]) as voicebankCategory2}
 						<button
-							class="mx-6 font-semibold"
+							class="mx-6 my-2 whitespace-nowrap font-semibold"
 							onclick={() => currentVoicebankCategory2.set(voicebankCategory2)}
 							>{voicebankCategory2}</button
 						>
@@ -132,10 +136,10 @@
 			</div>
 
 			{#if $currentVoicebankCategory1 && $currentVoicebankCategory2}
-				<div class="mt-16 grid w-full grid-cols-2 grid-rows-2">
-					<div class="row-start-1 row-end-3 flex justify-end pr-6">
+				<div class="mt-16 w-full grid-cols-1 grid-rows-2 md:grid md:grid-cols-2">
+					<div class="row-start-1 row-end-3 flex justify-end md:pr-6">
 						<img
-							class=" w-2/3"
+							class="mb-4 w-full md:mb-0 md:w-2/3"
 							src={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
 								.illust}
 							alt={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
@@ -143,7 +147,7 @@
 							loading="lazy"
 						/>
 					</div>
-					<div class="pl-6 pt-4">
+					<div class="pt-4 md:pl-6">
 						<h3 class="text-3xl font-bold">
 							{voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
 								.name}
@@ -173,9 +177,9 @@
 							target="_blank">DOWNLOAD LINK</a
 						>
 					</div>
-					<div class="pl-6 pt-4">
+					<div class="pt-8 md:pl-6 md:pt-4">
 						<iframe
-							class="aspect-video w-2/3"
+							class="aspect-video w-full md:w-2/3"
 							src="https://www.youtube.com/embed/{voicebankData.voiceBanks[
 								$currentVoicebankCategory1
 							][$currentVoicebankCategory2].demoYoutubes}"

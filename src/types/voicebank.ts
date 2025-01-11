@@ -18,6 +18,7 @@ export interface IVoicebankData {
 	engName: string;
 	hashTag: string[];
 	youtubeVideos: string[];
+	teamForUseLink: string;
 	gender: string;
 	age: number;
 	height: number;
