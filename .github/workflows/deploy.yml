@@ -47,4 +47,4 @@ jobs:
           git add .
           git commit -m "$COMMIT_MESSAGE"
           git branch -M main
-          git push --force "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/2xxbin/voicebank" main
+          git push --force "https://${{ secrets.GH_TOKEN }}@github.com/2xxbin/voicebank.git" main
