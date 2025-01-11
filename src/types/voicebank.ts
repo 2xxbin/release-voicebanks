@@ -29,3 +29,10 @@ export interface IVoicebankData {
 	description: string[];
 	voiceBanks: { [key: string]: { [key: string]: IVoicebankDetail } };
 }
+
+export interface IVoicebankCardData {
+	id: string;
+	illust: string;
+	name: { kor: string; eng: string };
+	tag: string[];
+}
