@@ -35,8 +35,13 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
+		"@splidejs/splide": "4.1.4",
+		"@splidejs/svelte-splide": "0.2.9",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@types/js-yaml": "^4.0.9",
+		"embla-carousel": "^8.5.2",
+		"embla-carousel-svelte": "^8.5.2",
+		"embla-carousel-wheel-gestures": "^8.0.1",
 		"js-yaml": "^4.1.0",
 		"svelte-i18n": "^4.0.1"
 	}

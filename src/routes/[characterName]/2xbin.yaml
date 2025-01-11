@@ -7,6 +7,7 @@ height: 185
 weight: 65
 like: ['달고 씁쓸한거', '친구']
 unLike: ['조용함', '불안정한 미래']
+youtubeVideos: ['Hr9jiPrL3Tg', 'aRylwywLeoU', 'jSgT09PgPQE', 'AGUMVY0NseI', 'oJ_L3yOjBzA']
 portrait: '/images/character/portait/2xbin/ds1.png'
 description:
   - '부드러운 허스키 귀와 꼬리를 가진 운명을 수놓는 허스키, 빈빈입니다.'
