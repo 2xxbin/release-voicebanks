@@ -2,14 +2,16 @@
 	import type { IVoicebankData } from '../../types/voicebank.js';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import { type EmblaCarouselType, type EmblaOptionsType } from 'embla-carousel';
-	import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures';
-	import { writable } from 'svelte/store';
+	import { writable, type Writable } from 'svelte/store';
 
 	export let data;
 	const voicebankData: IVoicebankData = data.voicebankData as IVoicebankData;
 
 	let emblaApi: EmblaCarouselType | undefined;
 	const thisSlideIndex = writable(0);
+
+	const currentVoicebankCategory1: Writable<null | string> = writable(null);
+	const currentVoicebankCategory2: Writable<null | string> = writable(null);
 
 	const emblaOptions: EmblaOptionsType = {
 		loop: true
@@ -47,8 +49,8 @@
 
 			<ul class="mb-8 mt-6 leading-8">
 				<li>나이 : {voicebankData.age}</li>
-				<li>키 : {voicebankData.height}</li>
-				<li>몸무게 : {voicebankData.weight}</li>
+				<li>키 : {voicebankData.height}cm</li>
+				<li>몸무게 : {voicebankData.weight}kg</li>
 				<li>좋아하는 것 : {voicebankData.like.join(', ')}</li>
 				<li>싫어하는 것 : {voicebankData.unLike.join(', ')}</li>
 			</ul>
@@ -99,6 +101,95 @@
 					{/each}
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="flex w-full flex-col">
+		<div>
+			<div class="flex w-full justify-center font-sans text-2xl">
+				{#each Object.keys(voicebankData.voiceBanks) as voicebankCategory1, index}
+					<button
+						class="font-bold"
+						onclick={() => currentVoicebankCategory1.set(voicebankCategory1)}
+						>{voicebankCategory1}</button
+					>
+					{#if index !== Object.keys(voicebankData.voiceBanks).length - 1}
+						<span class="mx-6">|</span>
+					{/if}
+				{/each}
+			</div>
+
+			<div class="mt-4 flex w-full justify-center font-sans text-xl">
+				{#if $currentVoicebankCategory1}
+					{#each Object.keys(voicebankData.voiceBanks[$currentVoicebankCategory1]) as voicebankCategory2}
+						<button
+							class="mx-6 font-semibold"
+							onclick={() => currentVoicebankCategory2.set(voicebankCategory2)}
+							>{voicebankCategory2}</button
+						>
+					{/each}
+				{/if}
+			</div>
+
+			{#if $currentVoicebankCategory1 && $currentVoicebankCategory2}
+				<div class="mt-16 grid w-full grid-cols-2 grid-rows-2">
+					<div class="row-start-1 row-end-3 flex justify-end pr-6">
+						<img
+							class=" w-2/3"
+							src={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
+								.illust}
+							alt={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
+								.name}
+							loading="lazy"
+						/>
+					</div>
+					<div class="pl-6 pt-4">
+						<h3 class="text-3xl font-bold">
+							{voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
+								.name}
+						</h3>
+
+						<div class="mt-8 leading-loose">
+							{#each voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].explaination as explaination}
+								<p>{explaination}</p>
+							{/each}
+						</div>
+
+						<ul class="my-8 leading-loose">
+							{#each voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].staff as staff}
+								<li>
+									{staff.position} :: {staff.name}&nbsp; (<a
+										href={staff.contact.link}
+										target="_blank">{staff.contact.text}</a
+									>)
+								</li>
+							{/each}
+						</ul>
+
+						<a
+							class="und text-2xl font-bold"
+							href={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
+								.downloadLink}
+							target="_blank">DOWNLOAD LINK</a
+						>
+					</div>
+					<div class="pl-6 pt-4">
+						<iframe
+							class="aspect-video w-2/3"
+							src="https://www.youtube.com/embed/{voicebankData.voiceBanks[
+								$currentVoicebankCategory1
+							][$currentVoicebankCategory2].demoYoutubes}"
+							title="{voicebankData.voiceBanks[$currentVoicebankCategory1][
+								$currentVoicebankCategory2
+							].demoYoutubes} player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+			{/if}
 		</div>
 	</div>
 </main>

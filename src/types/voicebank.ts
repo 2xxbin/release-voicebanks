@@ -26,5 +26,5 @@ export interface IVoicebankData {
 	unLike: string[];
 	portrait: string;
 	description: string[];
-	voiceBanks: { [vbType: string]: IVoicebankDetail[] };
+	voiceBanks: { [key: string]: { [key: string]: IVoicebankDetail } };
 }

@@ -15,7 +15,8 @@ description:
   - '무뚝뚝한 허스키와 친구가 되어 노래를 불러주세요.'
 voiceBanks:
   AI:
-    - name: 'DiffSinger 1.0'
+    'DS 1.0':
+      name: 'DiffSinger 1.0'
       illust: '/images/character/portait/2xbin/ds1.png'
       demoYoutubes: ['oJ_L3yOjBzA']
       downloadLink: 'https://drive.google.com/file/d/18neuqldJKDnP-1uyYNQGAjmMBMr_9w3S/view'
@@ -36,7 +37,8 @@ voiceBanks:
           contact:
             text: 'X: @Dam__00'
             link: 'https://x.com/Dam__00'
-    - name: '미리보이스 Beta'
+    'MV Beta':
+      name: '미리보이스 Beta'
       illust: '/images/character/portait/2xbin/jpcv&mvbeta.png'
       demoYoutubes: ['1X65K0AAqYs']
       downloadLink: 'https://drive.google.com/file/d/12vLL5ARQHabShDDX-vODFZeX1B7Uhkq8/view?usp=drive_link'
@@ -56,7 +58,8 @@ voiceBanks:
             text: 'X: @comet_UTAU'
             link: 'https://x.com/comet_UTAU'
   UTAU:
-    - name: '중국어 CVV'
+    'ZH CVV':
+      name: '중국어 CVV'
       illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
       demoYoutubes: ['jSgT09PgPQE']
       downloadLink: 'https://drive.google.com/file/d/1oJAL1lVjNv-LEh578F-ymfu3ZKGdb9hb/view?usp=sharing'
@@ -77,7 +80,8 @@ voiceBanks:
           contact:
             text: 'X: @surren01522'
             link: 'https://x.com/surren01522'
-    - name: '한국어 단독음'
+    'KO CV':
+      name: '한국어 단독음'
       illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
       demoYoutubes: ['aRylwywLeoU']
       downloadLink: 'https://drive.google.com/file/d/1Chpi7iMytLO-LwUkTlG6NeLyN48DXBp6/view?usp=sharing'
@@ -98,15 +102,15 @@ voiceBanks:
           contact:
             text: 'X: @surren01522'
             link: 'https://x.com/surren01522'
-    - name: '일본어 연속음'
+    'JA VCV':
+      name: '일본어 연속음'
       illust: '/images/character/portait/2xbin/jpnvcv.png'
       demoYoutubes: ['AGUMVY0NseI']
       downloadLink: 'https://drive.google.com/file/d/17dz5phubH1ZHU8C3dIU9-Y0RRbHnOWb2/view?usp=drive_link'
       explaination:
-        - '한국어 음원과 일러스트가 함께 들어가 있습니다.'
-        - '오픈 우타우에서는 포네마이저가 KO CV인지 확인 해주세요.'
+        - '일본어 음원과 일러스트가 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 JA VCV & CVVC 인지 확인 해주세요.'
         - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
-        - '오리지널 C3음계와, 연단음식 받침(K, P, T), 단음식 받침(L, M, N, NG)이 포함되어 있습니다.'
         - '추천 리샘플러: Moresampler'
       staff:
         - name: '빈빈'
@@ -119,7 +123,8 @@ voiceBanks:
           contact:
             text: 'X: @goldenriver8'
             link: 'https://x.com/goldenriver8'
-    - name: '한국어 CVC'
+    'KO CVC':
+      name: '한국어 CVC'
       illust: '/images/character/portait/2xbin/kocvc.png'
       demoYoutubes: ['Hr9jiPrL3Tg']
       downloadLink: 'https://drive.google.com/file/d/13dB7VPFZOqTs1tWclm_QCjSefMEpGjCM/view?usp=sharing'
