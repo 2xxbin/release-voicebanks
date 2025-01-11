@@ -37,7 +37,7 @@ jobs:
       # 4. GitHub Pages 배포
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # GitHub의 토큰을 사용
+          GITHUB_TOKEN: ${{ secrets.GH_PAT_TOKEN }} # GitHub의 토큰을 사용
         run: |
           COMMIT_MESSAGE=$(git log -1 --pretty=%B)
           cd build
@@ -49,4 +49,4 @@ jobs:
           git add .
           git commit -m "$COMMIT_MESSAGE"
           git branch -M main
-          git push --force "https://${{ secrets.GH_TOKEN }}@github.com/2xxbin/voicebank.git" main
+          git push --force "https://${{ secrets.GH_PAT_TOKEN }}@github.com/2xxbin/voicebank.git" main
