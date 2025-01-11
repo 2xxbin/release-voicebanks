@@ -1,0 +1,36 @@
+korName: 무늬네
+engName: munuine
+hashTag: ['발랄한', '만화가', '망상가', 'ENFP']
+gender: 여성
+age: 18
+height: 160
+weight: 40
+like: ['단 군것질', '에이드', '잠', '음악', '파티']
+unLike: ['?']
+portrait: '/images/character/portait/munuine/main.png'
+youtubeVideos: ['k_gHbt-V72M']
+teamForUseLink: https://2xxbin.notion.site/2xbin-70552ac5683b45ebba2ac6f5ffe9c65e?pvs=4
+description:
+  - '???'
+voiceBanks:
+  UTAU:
+    'KO CVC':
+      name: '한국어 CVC'
+      illust: '/images/character/portait/munuine/main.png'
+      demoYoutubeID: 'k_gHbt-V72M'
+      downloadLink: 'https://drive.google.com/file/d/12ImZz4g1pvebPDcOJ7CynNRsSzoy11o_/view?usp=drive_link'
+      explaination:
+        - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 한국어 CVC인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '무늬네'
+          position: 'Illustration'
+          contact:
+            text: 'X: @surren01522'
+            link: 'https://x.com/surren01522'

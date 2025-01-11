@@ -44,7 +44,7 @@
 	});
 </script>
 
-<div class="flex justify-center">
+<div class="flex flex-grow items-center justify-center">
 	{#if voicebanks.length > 0}
 		<div class="grid gap-6" style="grid-template-columns: repeat({$columnCSS}, minmax(0, 1fr));">
 			{#each voicebanks as voicebank}
