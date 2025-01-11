@@ -1,0 +1,43 @@
+name: Deploy Vite Vue Project to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 레포지토리 체크아웃
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # 2. Node.js 및 종속성 설정
+      - name: Set up Node.js and Install Dependencies
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # 프로젝트에 맞는 Node.js 버전 사용
+          cache: 'yarn'
+
+      # 3. Vite 빌드
+      - name: Build Project
+        run: |
+          yarn build
+
+      # 4. GitHub Pages 배포
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT_TOKEN }} # GitHub의 토큰을 사용
+        run: |
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          cd build
+          touch .nojekyll
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "$COMMIT_MESSAGE"
+          git branch -M main
+          git push --force "https://${{ secrets.GH_PAT_TOKEN }}@github.com/2xxbin/voicebank" main
