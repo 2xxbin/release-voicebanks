@@ -46,6 +46,12 @@
 	});
 </script>
 
+<svelte:head>
+	{#each voicebanks as voicebank}
+		<link rel="preload" as="image" href="{base}{voicebank.illust}" />
+	{/each}
+</svelte:head>
+
 <div class="flex flex-grow items-center justify-center">
 	{#if voicebanks.length > 0}
 		<div class="grid gap-6" style="grid-template-columns: repeat({$columnCSS}, minmax(0, 1fr));">

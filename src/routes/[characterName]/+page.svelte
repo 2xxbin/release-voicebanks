@@ -12,8 +12,12 @@
 	let emblaApi: EmblaCarouselType | undefined;
 	const thisSlideIndex = writable(0);
 
-	const currentVoicebankCategory1: Writable<null | string> = writable(null);
-	const currentVoicebankCategory2: Writable<null | string> = writable(null);
+	const currentVoicebankCategory1: Writable<string> = writable(
+		Object.keys(voicebankData.voiceBanks)[0]
+	);
+	const currentVoicebankCategory2: Writable<string> = writable(
+		Object.keys(voicebankData.voiceBanks[$currentVoicebankCategory1])[0]
+	);
 
 	const emblaOptions: EmblaOptionsType = {
 		loop: true
@@ -28,6 +32,19 @@
 		}
 	}
 </script>
+
+<svelte:head>
+	<link rel="preload" as="image" href="{base}{voicebankData.portrait}" />
+	{#each Object.keys(voicebankData.voiceBanks) as category1}
+		{#each Object.keys(voicebankData.voiceBanks[category1]) as category2}
+			<link
+				rel="preload"
+				as="image"
+				href="{base}{voicebankData.voiceBanks[category1][category2].illust}"
+			/>
+		{/each}
+	{/each}
+</svelte:head>
 
 <main class="flex-grow">
 	<div class="flex w-full flex-col-reverse justify-center md:flex-row">
