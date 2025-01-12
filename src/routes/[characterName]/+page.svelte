@@ -80,8 +80,10 @@
 				{/each}
 			</div>
 
-			<a class="text-2xl font-bold" href={voicebankData.teamForUseLink} target="_blank"
-				>TEAM FOR USE</a
+			<a
+				class="cursor-pointer text-2xl font-bold underline"
+				href={voicebankData.teamForUseLink}
+				target="_blank">TEAM FOR USE</a
 			>
 
 			<div class="mt-12">
@@ -132,7 +134,9 @@
 			<div class="flex w-full justify-center font-sans text-2xl">
 				{#each Object.keys(voicebankData.voiceBanks) as voicebankCategory1, index}
 					<button
-						class="font-bold"
+						class="font-bold text-gray-500"
+						class:text-black={voicebankCategory1 === $currentVoicebankCategory1}
+						class:underline={voicebankCategory1 === $currentVoicebankCategory1}
 						onclick={() => currentVoicebankCategory1.set(voicebankCategory1)}
 						>{voicebankCategory1}</button
 					>
@@ -146,7 +150,9 @@
 				{#if $currentVoicebankCategory1}
 					{#each Object.keys(voicebankData.voiceBanks[$currentVoicebankCategory1]) as voicebankCategory2}
 						<button
-							class="mx-6 my-2 whitespace-nowrap font-semibold"
+							class="mx-6 my-2 whitespace-nowrap font-semibold text-gray-500"
+							class:text-black={voicebankCategory2 === $currentVoicebankCategory2}
+							class:underline={voicebankCategory2 === $currentVoicebankCategory2}
 							onclick={() => currentVoicebankCategory2.set(voicebankCategory2)}
 							>{voicebankCategory2}</button
 						>
