@@ -19,7 +19,6 @@ voiceBanks:
     'DS 1.0':
       name: 'DiffSinger 1.0'
       illust: '/images/character/portait/2xbin/ds1.png'
-      demoYoutubes: ['oJ_L3yOjBzA']
       downloadLink: 'https://drive.google.com/file/d/18neuqldJKDnP-1uyYNQGAjmMBMr_9w3S/view'
       explaination:
         - '디프싱어 음원과 일러스트가 함께 들어가 있습니다.'
@@ -27,6 +26,11 @@ voiceBanks:
         - '한국어 데이터 40분 + "Alex Floarea-AI-SVS" 데이터로 제작되었습니다.'
         - '사용 가능 파라미터 : velocity (curve), tension (curve), voicing (curve)'
         - '사용 가능 언어 : 한국어, 일본어, 영어'
+      sample:
+        youtube: 'oJ_L3yOjBzA'
+        name: Zero Fill Love
+        originalSinger: Pangya Season 4
+        ust: 2xxbin
       staff:
         - name: '빈빈'
           position: 'Labeling & Training'
@@ -41,12 +45,13 @@ voiceBanks:
     'MV Beta':
       name: '미리보이스 Beta'
       illust: '/images/character/portait/2xbin/jpcv&mvbeta.png'
-      demoYoutubes: ['1X65K0AAqYs']
       downloadLink: 'https://drive.google.com/file/d/12vLL5ARQHabShDDX-vODFZeX1B7Uhkq8/view?usp=drive_link'
       explaination:
         - '미리보이스 목소리와 일러스트가 함께 들어가 있습니다.'
         - '미리보이스의 도구 > 성우 설치로 설치할 수 있습니다.'
         - '사용 가능 언어 : 한국어 / 사용 가능 스타일: normal'
+      sample:
+        youtube: '1X65K0AAqYs'
       staff:
         - name: '빈빈'
           position: 'Training'
@@ -62,7 +67,6 @@ voiceBanks:
     'ZH CVV':
       name: '중국어 CVV'
       illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
-      demoYoutubes: ['jSgT09PgPQE']
       downloadLink: 'https://drive.google.com/file/d/1oJAL1lVjNv-LEh578F-ymfu3ZKGdb9hb/view?usp=sharing'
       explaination:
         - '중국어 음원과 일러스트가 함께 들어가 있습니다.'
@@ -70,6 +74,13 @@ voiceBanks:
         - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
         - '오리지널 C3음계가 포함되어 있습니다.'
         - '추천 리샘플러: Moresampler'
+      sample:
+        youtube: 'jSgT09PgPQE'
+        name: 星愿StarWish
+        originalSinger: Stardust(Xingchen)
+        ust: 2xxbin
+        explaination:
+          - 'UST 배포 : https://cafe.naver.com/utauteto/31308'
       staff:
         - name: '빈빈'
           position: 'Oto Configuration'
@@ -84,7 +95,6 @@ voiceBanks:
     'KO CV':
       name: '한국어 단독음'
       illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
-      demoYoutubes: ['aRylwywLeoU']
       downloadLink: 'https://drive.google.com/file/d/1Chpi7iMytLO-LwUkTlG6NeLyN48DXBp6/view?usp=sharing'
       explaination:
         - '한국어 음원과 일러스트가 함께 들어가 있습니다.'
@@ -92,6 +102,11 @@ voiceBanks:
         - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
         - '오리지널 C3음계와, 연단음식 받침(K, P, T), 단음식 받침(L, M, N, NG)이 포함되어 있습니다.'
         - '추천 리샘플러: Moresampler'
+      sample:
+        youtube: 'aRylwywLeoU'
+        name: 하늘나라 반창고
+        originalSinger: 배개갯
+        ust: 2xxbin
       staff:
         - name: '빈빈'
           position: 'Oto Configuration'
@@ -106,13 +121,20 @@ voiceBanks:
     'JA VCV':
       name: '일본어 연속음'
       illust: '/images/character/portait/2xbin/jpnvcv.png'
-      demoYoutubes: ['AGUMVY0NseI']
       downloadLink: 'https://drive.google.com/file/d/17dz5phubH1ZHU8C3dIU9-Y0RRbHnOWb2/view?usp=drive_link'
       explaination:
         - '일본어 음원과 일러스트가 함께 들어가 있습니다.'
         - '오픈 우타우에서는 포네마이저가 JA VCV & CVVC 인지 확인 해주세요.'
         - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
         - '추천 리샘플러: Moresampler'
+      sample:
+        youtube: 'AGUMVY0NseI'
+        name: Fairytale, [reuinion]
+        originalSinger: BuzzG
+        ust: kapi
+        explaination:
+          - 'PV :: びあい (X: @bibichow7)'
+          - 'Tuning :: Naff (X: @naff_san)'
       staff:
         - name: '빈빈'
           position: 'Oto Configuration'
@@ -127,7 +149,6 @@ voiceBanks:
     'KO CVC':
       name: '한국어 CVC'
       illust: '/images/character/portait/2xbin/kocvc.png'
-      demoYoutubes: ['Hr9jiPrL3Tg']
       downloadLink: 'https://drive.google.com/file/d/13dB7VPFZOqTs1tWclm_QCjSefMEpGjCM/view?usp=sharing'
       explaination:
         - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
@@ -136,6 +157,11 @@ voiceBanks:
         - '오리지널과 파워 어펜드가 포함되어 있습니다.'
         - '추천 리샘플러: Moresampler'
         - '추천 플래그: Mo10, Mt-20'
+      sample:
+        youtube: 'Hr9jiPrL3Tg'
+        name: Elixir
+        originalSinger: 피로zzZ
+        ust: 마따따비
       staff:
         - name: '빈빈'
           position: 'Oto Configuration'

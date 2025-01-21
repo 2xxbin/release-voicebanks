@@ -17,12 +17,16 @@ voiceBanks:
     'KO CVC':
       name: '한국어 CVC'
       illust: '/images/character/portait/munuine/main.png'
-      demoYoutubeID: 'k_gHbt-V72M'
       downloadLink: 'https://drive.google.com/file/d/12ImZz4g1pvebPDcOJ7CynNRsSzoy11o_/view?usp=drive_link'
       explaination:
         - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
         - '오픈 우타우에서는 포네마이저가 한국어 CVC인지 확인 해주세요.'
         - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+      sample:
+        youtube: 'k_gHbt-V72M'
+        name: 어제, 오늘, 내일
+        originalSinger: ichigo
+        ust: 2xxbin
       staff:
         - name: '빈빈'
           position: 'Oto Configuration'

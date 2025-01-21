@@ -4,10 +4,19 @@ interface IStaff {
 	contact: { text: string; link: string };
 }
 
+interface ISample {
+	youtube: string;
+	name?: string;
+	originalSinger?: string;
+	ust?: string;
+	explaination?: string[];
+}
+
 interface IVoicebankDetail {
 	name: string;
 	illust: string;
-	demoYoutubes: string[];
+	// demoYoutubes: string[];
+	sample: ISample;
 	downloadLink: string;
 	explaination: string[];
 	staff: IStaff[];

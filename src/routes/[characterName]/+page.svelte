@@ -5,6 +5,7 @@
 	import { writable, type Writable } from 'svelte/store';
 
 	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
 
 	export let data;
 	const voicebankData: IVoicebankData = data.voicebankData as IVoicebankData;
@@ -31,6 +32,10 @@
 			});
 		}
 	}
+
+	onMount(() => {
+		console.log(voicebankData);
+	});
 </script>
 
 <svelte:head>
@@ -134,7 +139,8 @@
 			<div class="flex w-full justify-center font-sans text-2xl">
 				{#each Object.keys(voicebankData.voiceBanks) as voicebankCategory1, index}
 					<button
-						class="font-bold text-gray-500"
+						class="font-bold"
+						class:text-gray-500={voicebankCategory1 !== $currentVoicebankCategory1}
 						class:text-black={voicebankCategory1 === $currentVoicebankCategory1}
 						class:underline={voicebankCategory1 === $currentVoicebankCategory1}
 						onclick={() => currentVoicebankCategory1.set(voicebankCategory1)}
@@ -150,7 +156,8 @@
 				{#if $currentVoicebankCategory1}
 					{#each Object.keys(voicebankData.voiceBanks[$currentVoicebankCategory1]) as voicebankCategory2}
 						<button
-							class="mx-6 my-2 whitespace-nowrap font-semibold text-gray-500"
+							class="mx-6 my-2 whitespace-nowrap font-semibold"
+							class:text-gray-500={voicebankCategory2 !== $currentVoicebankCategory2}
 							class:text-black={voicebankCategory2 === $currentVoicebankCategory2}
 							class:underline={voicebankCategory2 === $currentVoicebankCategory2}
 							onclick={() => currentVoicebankCategory2.set(voicebankCategory2)}
@@ -197,26 +204,50 @@
 						</ul>
 
 						<a
-							class="und text-2xl font-bold"
+							class=" text-2xl font-bold underline"
 							href={voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
 								.downloadLink}
 							target="_blank">DOWNLOAD LINK</a
 						>
 					</div>
-					<div class="pt-8 md:pl-6 md:pt-4">
+					<div class="pt-8 md:pl-6 md:pt-2">
 						<iframe
 							class="aspect-video w-full md:w-2/3"
 							src="https://www.youtube.com/embed/{voicebankData.voiceBanks[
 								$currentVoicebankCategory1
-							][$currentVoicebankCategory2].demoYoutubes}"
+							][$currentVoicebankCategory2].sample.youtube}"
 							title="{voicebankData.voiceBanks[$currentVoicebankCategory1][
 								$currentVoicebankCategory2
-							].demoYoutubes} player"
+							].sample.youtube} player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerpolicy="strict-origin-when-cross-origin"
 							allowfullscreen
 						></iframe>
+						<div class="mt-4">
+							{#if voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].sample.originalSinger && voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].sample.name}
+								<p class="text-lg font-semibold">
+									{voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2]
+										.sample.originalSinger} - {voicebankData.voiceBanks[$currentVoicebankCategory1][
+										$currentVoicebankCategory2
+									].sample.name}
+								</p>
+							{/if}
+							{#if voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].sample.ust}
+								<p>
+									UST :: {voicebankData.voiceBanks[$currentVoicebankCategory1][
+										$currentVoicebankCategory2
+									].sample.ust}
+								</p>
+							{/if}
+							{#if voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].sample.explaination}
+								<div class="mt-4">
+									{#each voicebankData.voiceBanks[$currentVoicebankCategory1][$currentVoicebankCategory2].sample.explaination as exp}
+										<p>{exp}</p>
+									{/each}
+								</div>
+							{/if}
+						</div>
 					</div>
 				</div>
 			{/if}
