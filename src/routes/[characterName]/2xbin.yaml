@@ -80,6 +80,13 @@ voiceBanks:
         ust: 2xxbin
         explaination:
           - '음정 조교가 되어있지 않은 커버입니다.'
+          - '일부 가사가 캐릭터에 맞게 수정되어 있습니다.'
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
     'ZH CVV':
       name: '중국어 CVV'
       illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
