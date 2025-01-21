@@ -171,7 +171,7 @@
 				<div class="mt-16 w-full grid-cols-1 grid-rows-2 md:grid md:grid-cols-2">
 					<div class="row-start-1 row-end-3 flex justify-end md:pr-6">
 						<img
-							class="mb-4 w-full md:mb-0 md:w-2/3"
+							class="mb-4 w-full object-cover md:mb-0 md:w-2/3"
 							src="{base}{voicebankData.voiceBanks[$currentVoicebankCategory1][
 								$currentVoicebankCategory2
 							].illust}"
@@ -210,7 +210,7 @@
 							target="_blank">DOWNLOAD LINK</a
 						>
 					</div>
-					<div class="pt-8 md:pl-6 md:pt-2">
+					<div class="pt-8 md:pl-6 md:pt-4">
 						<iframe
 							class="aspect-video w-full md:w-2/3"
 							src="https://www.youtube.com/embed/{voicebankData.voiceBanks[
