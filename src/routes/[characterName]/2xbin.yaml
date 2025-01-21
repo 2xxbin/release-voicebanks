@@ -64,6 +64,22 @@ voiceBanks:
             text: 'X: @comet_UTAU'
             link: 'https://x.com/comet_UTAU'
   UTAU:
+    'ARPA β':
+      name: '영어 Arpasing Beta'
+      illust: '/images/character/portait/2xbin/ds1.png'
+      downloadLink: 'https://drive.google.com/file/d/16Sz5OtbnHPRs4jWxuCHl9nB_b7hiqrGc/view?usp=sharing'
+      explaination:
+        - '발음 실수와 일부 행 누락이 되어있는 알파싱 음원입니다.'
+        - 'Moresampler의 자동 원음 설정 후 보정이 되어있지 않습니다.'
+        - '발음 실수 문제로 단어를 입력 시, 비슷한 음소로 바꾸는 등의 조교가 필요합니다.'
+        - '베타 음원으로, 이 음원을 위한, 아이콘와 일러스트가 없습니다.'
+      sample:
+        youtube: 'o_jKE1gyy9c'
+        name: Miku
+        originalSinger: Anamanaguchi
+        ust: 2xxbin
+        explaination:
+          - '음정 조교가 되어있지 않은 커버입니다.'
     'ZH CVV':
       name: '중국어 CVV'
       illust: '/images/character/portait/2xbin/zhcvv&kocv.png'
