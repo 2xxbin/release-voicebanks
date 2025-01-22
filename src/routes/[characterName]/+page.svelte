@@ -171,7 +171,7 @@
 				<div class="mt-16 w-full grid-cols-1 grid-rows-2 md:grid md:grid-cols-2">
 					<div class="row-start-1 row-end-3 flex justify-end md:pr-6">
 						<img
-							class="mb-4 w-full object-cover md:mb-0 md:w-2/3"
+							class="mb-4 block w-full border-none object-cover shadow-none outline-none md:mb-0 md:w-2/3"
 							src="{base}{voicebankData.voiceBanks[$currentVoicebankCategory1][
 								$currentVoicebankCategory2
 							].illust}"
