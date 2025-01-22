@@ -22,10 +22,10 @@ export async function load() {
 		});
 
 		return { voicebanks: data };
-	} catch {
+	} catch (err) {
 		return {
 			status: 404,
-			error: new Error('error')
+			error: err
 		};
 	}
 }
