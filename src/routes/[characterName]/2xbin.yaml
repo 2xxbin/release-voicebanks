@@ -172,7 +172,7 @@ voiceBanks:
     'KO CVC V2':
       name: '한국어 CVC ACT2'
       illust: '/images/character/portait/2xbin/kocvc2.png'
-      downloadLink: ''
+      downloadLink: 'https://drive.google.com/file/d/1u2MWPeEiRMn5FnNT4Y6Z2YEr69Y1DtS0/view?usp=sharing'
       explaination:
         - 'Original, Soft 두음색의 다색 다음계 음원입니다.'
         - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
