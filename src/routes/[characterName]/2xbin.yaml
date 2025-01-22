@@ -169,6 +169,39 @@ voiceBanks:
           contact:
             text: 'X: @goldenriver8'
             link: 'https://x.com/goldenriver8'
+    'KO CVC V2':
+      name: '한국어 CVC ACT2'
+      illust: '/images/character/portait/2xbin/kocvc2.png'
+      downloadLink: ''
+      explaination:
+        - 'Original, Soft 두음색의 다색 다음계 음원입니다.'
+        - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
+        - '일러스트는 수인 형태, 사람 형태 두 일러가 포함되어 있습니다.'
+        - ' '
+        - '"a yeo" 발음이 녹음 실수로 인해 a ye로 설정되어 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 한국어 CVC인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+      sample:
+        youtube: 'zhL1xu05Zd0'
+        name: 언어의 노래
+        originalSinger: 상록수
+        ust: 빈빈
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '담'
+          position: 'Illustration (Human)'
+          contact:
+            text: 'X: @Dam__00'
+            link: 'https://x.com/Dam__00'
+        - name: '아시오 오시오'
+          position: 'Illustration (Furry)'
+          contact:
+            text: 'X: @AsioOsio'
+            link: 'https://x.com/AsioOsio'
     'KO CVC':
       name: '한국어 CVC'
       illust: '/images/character/portait/2xbin/kocvc.png'
