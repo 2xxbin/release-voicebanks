@@ -75,6 +75,7 @@
 				<li>나이 : {voicebankData.age}</li>
 				<li>키 : {voicebankData.height}cm</li>
 				<li>몸무게 : {voicebankData.weight}kg</li>
+				<li>생일 : {voicebankData.birthday}</li>
 				<li>좋아하는 것 : {voicebankData.like.join(', ')}</li>
 				<li>싫어하는 것 : {voicebankData.unLike.join(', ')}</li>
 			</ul>

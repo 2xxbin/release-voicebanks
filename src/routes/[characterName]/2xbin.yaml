@@ -5,6 +5,7 @@ gender: 남성
 age: 21
 height: 185
 weight: 65
+birthday: '4월 20일'
 like: ['달고 씁쓸한거', '친구']
 unLike: ['조용함', '불안정한 미래']
 youtubeVideos: ['Hr9jiPrL3Tg', 'aRylwywLeoU', 'jSgT09PgPQE', 'AGUMVY0NseI', 'oJ_L3yOjBzA']

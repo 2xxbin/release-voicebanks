@@ -29,6 +29,7 @@ export interface IVoicebankData {
 	youtubeVideos: string[];
 	teamForUseLink: string;
 	gender: string;
+	birthday: string;
 	age: number;
 	height: number;
 	weight: number;
