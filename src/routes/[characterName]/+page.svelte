@@ -52,7 +52,7 @@
 </svelte:head>
 
 <main class="flex-grow">
-	<div class="flex w-full flex-col-reverse justify-center md:flex-row">
+	<div class="mb-16 flex w-full flex-col-reverse justify-center md:flex-row">
 		<img
 			class="mt-12 object-contain md:mt-0 md:w-[30%]"
 			src="{base}{voicebankData.portrait}"
@@ -84,6 +84,16 @@
 					<p class="leading-6">{desc}</p>
 				{/each}
 			</div>
+
+			<ul class="my-10">
+				{#each voicebankData.staff as staff}
+					<li>
+						{staff.position} :: {staff.name}&nbsp; (<a href={staff.contact.link} target="_blank"
+							>{staff.contact.text}</a
+						>)
+					</li>
+				{/each}
+			</ul>
 
 			<a
 				class="cursor-pointer text-2xl font-bold underline"

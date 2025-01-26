@@ -36,6 +36,7 @@ export interface IVoicebankData {
 	unLike: string[];
 	portrait: string;
 	description: string[];
+	staff: IStaff[];
 	voiceBanks: { [key: string]: { [key: string]: IVoicebankDetail } };
 }
 
