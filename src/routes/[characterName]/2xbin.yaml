@@ -14,6 +14,17 @@ description:
   - '부드러운 허스키 귀와 꼬리를 가진 운명을 수놓는 허스키, 빈빈입니다.'
   - '조금 까칠해 보이지만, 다정하고 부드러운 성격을 보여줍니다.'
   - '무뚝뚝한 허스키와 친구가 되어 노래를 불러주세요.'
+staff:
+  - name: '빈빈'
+    position: '목소리 제공'
+    contact:
+      text: 'X: @2xxbin'
+      link: 'https://x.com/2xxbin'
+  - name: '담'
+    position: '캐릭터 디자인'
+    contact:
+      text: 'X: @Dam__00'
+      link: 'https://x.com/Dam__00'
 voiceBanks:
   AI:
     'DS 1.0':

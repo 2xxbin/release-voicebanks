@@ -11,7 +11,18 @@ portrait: '/images/character/portait/munuine/main.png'
 youtubeVideos: ['k_gHbt-V72M']
 teamForUseLink: https://2xxbin.notion.site/2xbin-70552ac5683b45ebba2ac6f5ffe9c65e?pvs=4
 description:
-  - '???'
+  - ''
+staff:
+  - name: '무늬네'
+    position: '목소리 제공'
+    contact:
+      text: 'X: @surren01522'
+      link: 'https://x.com/surren01522'
+  - name: '무늬네'
+    position: '캐릭터 디자인'
+    contact:
+      text: 'X: @surren01522'
+      link: 'https://x.com/surren01522'
 voiceBanks:
   UTAU:
     'KO CVC':
