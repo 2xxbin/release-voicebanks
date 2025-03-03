@@ -1,0 +1,97 @@
+name:
+  main: 근호
+  sub: geunho
+  detail:
+    - { language: '한국어', name: '근호', detail: 'geunho' }
+    - { language: '일본어', name: '根本 響虎', detail: 'ねもと きょうが, Nemoto Kyouga' }
+    - { language: '중국어', name: '根虎', detail: 'gēnhǔ' }
+hashTag: ['귀여운', '발랄한', 'UTAU']
+gender: 남성
+age: 20
+height: 175
+weight: 70
+birthday: '5월 17일'
+like: ['음악', '재밌는 일']
+unLike: ['지루한 일']
+youtubeVideos: []
+portrait: '/images/character/portait/geunho/main.png'
+teamForUseLink: https://2xxbin.notion.site/2xbin-70552ac5683b45ebba2ac6f5ffe9c65e?pvs=4
+description:
+  - '발랄하고 귀여운 백호 베이시스트, 근호 입니다.'
+  - '지루한 일을 싫어하고, 재미를 찾아 다닙니다.'
+  - '지루한 일상을 근호와 함께 재미있게 바꿔보세요.'
+staff:
+  - name: '레호'
+    position: '목소리 제공'
+    contact:
+      text: 'X: @furry_leho'
+      link: 'https://x.com/furry_leho'
+  - name: '모노 샤를로트'
+    position: '캐릭터 디자인'
+    contact:
+      text: 'X: @HN_made_hat'
+      link: 'https://x.com/HN_made_hat'
+  - name: '???'
+    position: '메인 일러스트'
+    contact:
+      text: 'X: @???'
+      link: ''
+voiceBanks:
+  UTAU:
+    'JA CVVC':
+      name: '일본어 CVVC'
+      illust: '/images/character/portait/geunho/jacvvc.png'
+      downloadLink: ''
+      explaination:
+        - '일본어 음원과 일러스트가 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 JA VCV & CVVC 인지 확인 해주세요.'
+        - '오픈 우타우, 우타우 외에서의 사용을 금지합니다.'
+        - '일부 부정확하게 들리는 발음이 있습니다.'
+        - '추천 리샘플러: Moresampler'
+      sample:
+        youtube: ''
+        name: きゅうくらりん
+        originalSinger: いよわ
+        ust: 빈빈
+      staff:
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '???'
+          position: 'Illustration'
+          contact:
+            text: 'X: @???'
+            link: 'https://x.com/???'
+    'KO CVC':
+      name: '한국어 CVC'
+      illust: '/images/character/portait/geunho/kocvc.png'
+      downloadLink: ''
+      explaination:
+        - '한국어 음원과 일러스트, 리드미 파일이 함께 들어가 있습니다.'
+        - '오픈 우타우에서는 포네마이저가 한국어 CVC인지 확인 해주세요.'
+        - '각 발음마다의 목소리 톤의 차이가 있을 수 있습니다.'
+        - '일부 이중모음 CV가 누락되어 있습니다.'
+        - 'Moresampler 외에 타 리샘플러 사용시 문제가 생길 수 있습니다.'
+      sample:
+        youtube: ''
+        name: 벚꽃비
+        originalSinger: 상록수
+        ust: 빈빈
+      staff:
+        - name: '카메비'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @Kame_Bit'
+            link: 'https://x.com/Kame_Bit'
+        - name: '빈빈'
+          position: 'Oto Configuration'
+          contact:
+            text: 'X: @2xxbin'
+            link: 'https://x.com/2xxbin'
+        - name: '???'
+          position: 'Illustration'
+          contact:
+            text: 'X: @???'
+            link: 'https://x.com/???'
