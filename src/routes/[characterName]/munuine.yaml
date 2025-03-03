@@ -1,5 +1,9 @@
-korName: 무늬네
-engName: munuine
+name:
+  main: 무늬네
+  sub: munuine
+  detail:
+    - { language: '한국어', name: '무늬네' }
+    - { language: '영어', name: 'munuine' }
 hashTag: ['발랄한', '만화가', '망상가', 'ENFP']
 gender: 여성
 age: 18

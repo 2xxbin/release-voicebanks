@@ -1,5 +1,9 @@
-korName: 빈빈
-engName: 2xbin
+name:
+  main: 빈빈
+  sub: 2xbin
+  detail:
+    - { language: '한국어', name: '빈빈' }
+    - { language: '영어', name: '2xxbin' }
 hashTag: ['부드러운', '주술사', 'UTAU']
 gender: 남성
 age: 21

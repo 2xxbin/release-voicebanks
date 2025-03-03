@@ -65,13 +65,13 @@
 				>
 					<img
 						src="{base}{voicebank.illust}"
-						alt={voicebank.name.kor}
+						alt={voicebank.id}
 						class="z-1 contrast-60 duration-50 absolute inset-0 h-full w-full object-cover brightness-0 grayscale filter transition-opacity ease-in-out group-hover:opacity-0"
 					/>
 					<span
 						class="duration-50 text-center text-3xl font-bold opacity-0 transition-opacity ease-in group-hover:opacity-100"
 					>
-						{voicebank.name.kor}<br />{voicebank.name.eng}
+						{voicebank.name.main}<br />{voicebank.name.sub}
 					</span>
 				</div>
 			{/each}

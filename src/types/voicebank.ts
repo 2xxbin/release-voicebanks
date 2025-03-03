@@ -22,9 +22,21 @@ interface IVoicebankDetail {
 	staff: IStaff[];
 }
 
+export interface INameDetail {
+	language: string;
+	name: string;
+}
+
+export interface IName {
+	main: string;
+	sub: string;
+	detail: INameDetail[];
+}
+
 export interface IVoicebankData {
-	korName: string;
-	engName: string;
+	// korName: string;
+	// engName: string;
+	name: IName;
 	hashTag: string[];
 	youtubeVideos: string[];
 	teamForUseLink: string;
@@ -44,6 +56,6 @@ export interface IVoicebankData {
 export interface IVoicebankCardData {
 	id: string;
 	illust: string;
-	name: { kor: string; eng: string };
+	name: { main: string; sub: string };
 	tag: string[];
 }

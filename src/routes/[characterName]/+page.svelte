@@ -9,6 +9,7 @@
 
 	export let data;
 	const voicebankData: IVoicebankData = data.voicebankData as IVoicebankData;
+	const id: string = data.id;
 
 	let emblaApi: EmblaCarouselType | undefined;
 	const thisSlideIndex = writable(0);
@@ -56,13 +57,13 @@
 		<img
 			class="mt-12 object-contain md:mt-0 md:w-[30%]"
 			src="{base}{voicebankData.portrait}"
-			alt="{voicebankData.engName} portrait"
+			alt="{id} portrait"
 		/>
 		<div class="w-full md:ml-16 md:w-1/3">
 			<div class="mt-4 flex items-center">
-				<h1 class="text-4xl font-bold">{voicebankData.korName}</h1>
+				<h1 class="text-4xl font-bold">{voicebankData.name.main}</h1>
 				<span class="mx-4">|</span>
-				<h2 class="text-xl">{voicebankData.engName}</h2>
+				<h2 class="text-xl">{voicebankData.name.sub}</h2>
 			</div>
 
 			<div class="mt-2">
@@ -71,7 +72,15 @@
 				{/each}
 			</div>
 
-			<ul class="mt-6 leading-8">
+			<div class="my-6">
+				<ul>
+					{#each voicebankData.name.detail as names}
+						<li>{names.language} 이름 : {names.name}</li>
+					{/each}
+				</ul>
+			</div>
+
+			<ul class="leading-8">
 				<li>나이 : {voicebankData.age}</li>
 				<li>키 : {voicebankData.height}cm</li>
 				<li>몸무게 : {voicebankData.weight}kg</li>

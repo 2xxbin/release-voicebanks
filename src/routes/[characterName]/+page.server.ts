@@ -12,6 +12,7 @@ export async function load({ params }: any) {
 		const data = yaml.load(fileContents);
 
 		return {
+			id: characterName,
 			voicebankData: data,
 			status: 200,
 			error: null

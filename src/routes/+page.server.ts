@@ -12,11 +12,12 @@ export async function load() {
 			const filePath = path.resolve(fileBasePath, voicebankFileName);
 			const content = fs.readFileSync(filePath, 'utf-8');
 			const contentData: IVoicebankData = yaml.load(content) as IVoicebankData;
+			const characterID = voicebankFileName.replace('.yaml', '');
 
 			return {
-				id: contentData.engName,
-				illust: `/images/character/bust/${contentData.engName}.png`,
-				name: { kor: contentData.korName, eng: contentData.engName },
+				id: characterID,
+				illust: `/images/character/bust/${characterID}.png`,
+				name: { main: contentData.name.main, sub: contentData.name.sub },
 				tag: contentData.hashTag
 			};
 		});
