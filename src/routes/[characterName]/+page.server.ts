@@ -6,6 +6,12 @@ import * as yaml from 'js-yaml';
 export async function load({ params }: any) {
 	const { characterName } = params;
 
+	if (characterName.startsWith('_')) {
+		return {
+			status: 403
+		};
+	}
+
 	try {
 		const filePath = path.resolve('src/routes/[characterName]', `${characterName}.yaml`);
 		const fileContents = fs.readFileSync(filePath, 'utf8');
