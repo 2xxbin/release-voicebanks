@@ -6,7 +6,9 @@ import type { IVoicebankData } from '../types/voicebank';
 export async function load() {
 	try {
 		const fileBasePath = 'src/routes/[characterName]';
-		const voicebanks = fs.readdirSync(fileBasePath).filter((value) => value.endsWith('.yaml'));
+		const voicebanks = fs
+			.readdirSync(fileBasePath)
+			.filter((value) => value.endsWith('.yaml') && !value.startsWith('_'));
 
 		const data = voicebanks.map((voicebankFileName) => {
 			const filePath = path.resolve(fileBasePath, voicebankFileName);
