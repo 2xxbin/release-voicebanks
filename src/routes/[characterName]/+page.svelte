@@ -75,7 +75,12 @@
 			<div class="my-6">
 				<ul>
 					{#each voicebankData.name.detail as names}
-						<li>{names.language} 이름 : {names.name}</li>
+						<li>
+							{names.language} 이름 : {names.name}
+							{#if names.detail}
+								({names.detail})
+							{/if}
+						</li>
 					{/each}
 				</ul>
 			</div>

@@ -25,6 +25,7 @@ interface IVoicebankDetail {
 export interface INameDetail {
 	language: string;
 	name: string;
+	detail?: string;
 }
 
 export interface IName {
